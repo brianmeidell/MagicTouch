@@ -62,7 +62,7 @@ var tuio = {
     //console.log('callback type: ' + type + ' sid: ' + sid + ' fid: ' + fid);
 		var data;
 
-		if (type !== 3) {
+		if (type !== 3 && this._data[sid]) {
 			data = this._data[sid];
 		} else {
 			data = {
